@@ -1,11 +1,13 @@
 # -*- coding:utf-8 -*-
 from setuptools import setup
 
-with open("requirements.txt") as reqs_file:
-    reqs = reqs_file.readlines()
+reqs = [
+    'protobuf>=2.3.0',
+    'six',
+]
 
 setup(
-    name='protobuf-to-dict',
+    name='protobuf3-to-dict',
     description=('Ben Hodgson: A teeny Python library for creating Python dicts from '
                  'protocol buffers and the reverse. Useful as an intermediate '
                  'step before serialisation (e.g. to JSON). '
